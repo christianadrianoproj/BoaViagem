@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Boa Viagem</string>
+    <string name="lblusuario">Usuário</string>
+    <string name="lblSenha">Senha</string>
+    <string name="lblEntrar">Entrar</string>
+
+    <string-array name="lista_TiposGastos">
+        <item>Alimentação</item>
+        <item>Hospedagem</item>
+        <item>Transporte</item>
+        <item>Entretenimento</item>
+        <item>Compra</item>
+        <item>Passagem</item>
+    </string-array>
+</resources>

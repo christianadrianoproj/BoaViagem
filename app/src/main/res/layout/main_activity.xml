@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".view.MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        android:text="Boa Viagem" />
+
+    <TextView
+        android:id="@+id/tv_UsuarioLogado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:layout_marginRight="15dp"
+        android:text="Usuario Logado" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:paddingTop="30dp"
+        android:rowCount="4">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:text="Novo Gasto" />
+            <ImageView
+                android:id="@+id/iv_NovoGasto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/imggasto"
+                tools:ignore="VectorDrawableCompat" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:text="Nova Viagem" />
+
+            <ImageView
+                android:id="@+id/iv_NovaViagem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/novaviagem"
+                tools:ignore="VectorDrawableCompat" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:text="Minhas Viagem" />
+
+            <ImageView
+                android:id="@+id/iv_MinhasViagens"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/minhasviagens"
+                tools:ignore="VectorDrawableCompat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:text="Configurações" />
+
+            <ImageView
+                android:id="@+id/iv_image4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/configuracoes"
+                tools:ignore="VectorDrawableCompat" />
+        </LinearLayout>
+
+
+    </GridLayout>
+</LinearLayout>

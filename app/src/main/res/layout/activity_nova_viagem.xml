@@ -1,0 +1,190 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="24dp"
+    tools:context=".view.NovaViagemActivity" >
+
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Destino" />
+
+    <EditText
+        android:id="@+id/et_destino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:inputType="text"/>
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipo da Viagem" />
+
+    <RadioGroup
+        android:id="@+id/rg_tipoViagem"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_Lazer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lazer">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb_Negocios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Negócios">
+
+        </RadioButton>
+
+    </RadioGroup>
+
+    <GridLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="left"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data da chegada" />
+            <EditText
+                android:id="@+id/et_dataChegada"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:inputType="date"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data da partida" />
+            <EditText
+                android:id="@+id/et_dataPartida"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:inputType="date"/>
+        </LinearLayout>
+    </GridLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Orçamento" />
+
+    <EditText
+        android:id="@+id/et_orcamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:inputType="numberDecimal"/>
+
+
+    <GridLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:paddingTop="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_column="1"
+            android:layout_columnWeight="2"
+            android:layout_gravity="right"
+            android:orientation="vertical"
+            tools:ignore="GridLayout">
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quantidade de pessoas" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_columnWeight="2"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical"
+            tools:ignore="GridLayout">
+            <EditText
+                android:id="@+id/et_quantidadePessoas"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+        </LinearLayout>
+    </GridLayout>
+
+    <GridLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:paddingTop="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            tools:ignore="GridLayout">
+
+            <Button
+                android:id="@+id/buttonCadastrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fadeScrollbars="false"
+                android:text="Criar nova viagem"
+                android:visibility="visible"/>
+        </LinearLayout>
+    </GridLayout>
+
+
+</LinearLayout>

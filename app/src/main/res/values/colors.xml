@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="corBordaTextInputLayout">#6F7070</color>
+    <color name="corBotaoAdicionar">#0F3E0F</color>
+    <color name="corBotaoCancelar">#DA374F</color>
+</resources>
